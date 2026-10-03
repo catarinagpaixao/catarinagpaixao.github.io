@@ -203,8 +203,8 @@
           <p class="ap-crumb">Dashboard</p><h1 class="ap-h1">Dashboard</h1>
           <div class="ap-grid ap-grid--4">
             <div class="ap-card"><span class="ap-k">House status</span>${inHouse ? '<span class="ap-badge ap-badge--inhouse">In-House</span>' : '<span class="ap-badge">Available</span>'}</div>
-            <div class="ap-card"><b class="ap-v">${nextIn ? fmt(nextIn.checkIn) : '—'}</b><span class="ap-k">${nextIn ? esc(nextIn.guest) + ' — Next check-in' : 'No upcoming check-ins'}</span></div>
-            <div class="ap-card"><b class="ap-v">${nextOut ? fmt(nextOut.checkOut) : '—'}</b><span class="ap-k">${nextOut ? esc(nextOut.guest) + ' — Next checkout' : 'No checkouts'}</span></div>
+            <div class="ap-card"><b class="ap-v">${nextIn ? fmt(nextIn.checkIn) : '|'}</b><span class="ap-k">${nextIn ? esc(nextIn.guest) + ' — Next check-in' : 'No upcoming check-ins'}</span></div>
+            <div class="ap-card"><b class="ap-v">${nextOut ? fmt(nextOut.checkOut) : '|'}</b><span class="ap-k">${nextOut ? esc(nextOut.guest) + ' — Next checkout' : 'No checkouts'}</span></div>
             <div class="ap-card"><b class="ap-v">${monthCount}</b><span class="ap-k">Bookings this month</span></div>
           </div>
           <div class="ap-grid ap-grid--wide">
