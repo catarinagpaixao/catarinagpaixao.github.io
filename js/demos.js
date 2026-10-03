@@ -158,7 +158,7 @@
     const taskRow = (t) => `
       <li class="ap-task${t.done ? ' is-done' : ''}">
         <label><input type="checkbox" data-act="task" data-id="${t.id}"${t.done ? ' checked' : ''}>
-          <span>${esc(t.title)} — ${esc(t.role)}${t.guest ? ' — ' + esc(t.guest) : ''}</span></label>
+          <span>${esc(t.title)} - ${esc(t.role)}${t.guest ? ' - ' + esc(t.guest) : ''}</span></label>
         ${!t.done && t.due < today ? '<span class="ap-badge ap-badge--overdue">Overdue</span>' : ''}
         <time>${fmt(t.due)}</time>
       </li>`;
