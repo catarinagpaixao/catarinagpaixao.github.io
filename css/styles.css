@@ -471,6 +471,8 @@ a.round:hover { background: var(--accent); color: var(--ink); border-color: var(
   .services .service:last-child { grid-column: auto; }
   .projects { grid-template-columns: minmax(0, 1fr); }
   .project--wide { grid-column: auto; }
+  .filters { width: 100%; flex-wrap: nowrap; gap: 4px; padding: 4px; }
+  .filter { flex: 1 1 auto; min-width: 0; padding: 8px 6px; font-size: 13px; white-space: nowrap; }
   .project--side { grid-template-columns: minmax(0, 1fr); gap: 14px; }
   .project--side .project__info { padding: 0 8px; }
   .project--side .project__demo { top: 22px; right: 22px; bottom: auto; left: auto; }
